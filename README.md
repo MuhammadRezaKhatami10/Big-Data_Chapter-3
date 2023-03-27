@@ -24,6 +24,12 @@ BIG DATA - Chapter 3
 
 ![2](https://user-images.githubusercontent.com/90266254/227842394-11c94df8-1cb3-4898-9bd1-e48824722f2a.png)
 
+- Broadcast adalah sebuah fungsi dalam Spark yang memungkinkan pengguna untuk mendistribusikan variabel secara efisien ke setiap node dalam sebuah cluster. Dengan menggunakan broadcast, setiap node dapat mengakses variabel tersebut dengan cepat tanpa perlu menyalinnya berkali-kali.
+
+- List adalah tipe data yang umum digunakan dalam bahasa pemrograman Python untuk menyimpan sejumlah nilai dalam satu variabel. List dapat berisi elemen-elemen dengan tipe data yang berbeda, dan dapat diakses menggunakan indeks. List ini sangat berguna dalam berbagai macam aplikasi dan dapat dimanipulasi dengan mudah menggunakan fungsi-fungsi built-in di Python.
+
+- Range adalah sebuah fungsi dalam bahasa pemrograman Python yang digunakan untuk menghasilkan deret bilangan bulat secara berurutan. Fungsi ini dapat diberikan argumen untuk memulai, mengakhiri, dan menentukan langkah antar bilangan. Deret bilangan ini sering digunakan dalam skenario pemrograman seperti pengulangan for-loop, dan sangat efisien untuk digunakan dalam program yang membutuhkan kumpulan bilangan bulat berurutan.
+
 ## PairRDD
 
 ![pairRDD](https://user-images.githubusercontent.com/90266254/227842484-004bcf52-09e3-4c3c-9126-f393610c1d28.png)
