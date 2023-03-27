@@ -1,6 +1,6 @@
-## Nama      : Pranata Dito Fitriyansyah
+## Nama      : Muhammad Reza Khatami
 ## Kelas     : TI - 3C
-## No. Absen : 16
+## No. Absen : 13
 
 BIG DATA - Chapter 3
 
