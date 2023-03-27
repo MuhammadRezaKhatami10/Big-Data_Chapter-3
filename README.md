@@ -10,6 +10,16 @@ BIG DATA - Chapter 3
 
 ![1](https://user-images.githubusercontent.com/90266254/227842358-482ab5cd-7c28-4fc1-be4c-9357745336f8.png)
 
+- SparkContext, disingkat menjadi "sc", adalah objek utama yang digunakan dalam pemrograman dengan Apache Spark. Dengan menggunakan SparkContext, kita dapat menginisialisasi aplikasi Spark dan membuat RDD (Resilient Distributed Datasets) yang mendukung komputasi paralel.
+
+- Accumulator adalah objek shared variable yang digunakan dalam Apache Spark untuk mengumpulkan nilai secara asinkron dari beberapa executor (pekerja) di sepanjang sebuah job (tugas). Objek ini biasanya digunakan untuk menghitung statistik yang kompleks atau mengakumulasikan hasil dalam loop.
+
+- Parallelize adalah sebuah method yang digunakan pada objek SparkContext untuk membuat RDD dari koleksi data yang ada dalam program. RDD ini akan didistribusikan secara paralel pada executor (pekerja) yang tersedia.
+
+- Lambda adalah sebuah fungsi anonim yang sering digunakan dalam pemrograman fungsional dan pemrograman paralel. Fungsi ini biasanya digunakan untuk melakukan operasi yang sederhana dan terbatas pada sebuah data, sehingga sangat cocok untuk dijalankan di dalam RDD.
+
+- Value adalah tipe data dasar dalam Spark yang mewakili nilai tunggal. Tipe data ini dapat berupa tipe data apapun seperti integer, float, string, boolean, atau objek Python. Value sering digunakan sebagai argument dalam method yang membutuhkan input data seperti map atau reduceByKey.
+
 ## Broadcast
 
 ![2](https://user-images.githubusercontent.com/90266254/227842394-11c94df8-1cb3-4898-9bd1-e48824722f2a.png)
