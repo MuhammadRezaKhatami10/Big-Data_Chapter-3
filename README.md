@@ -34,6 +34,14 @@ BIG DATA - Chapter 3
 
 ![pairRDD](https://user-images.githubusercontent.com/90266254/227842484-004bcf52-09e3-4c3c-9126-f393610c1d28.png)
 
+- textFile: fungsi untuk membaca file teks dan mengembalikan RDD dengan setiap baris dalam file menjadi elemen.
+
+- filter: fungsi untuk memfilter elemen dalam RDD berdasarkan kondisi tertentu, menghasilkan RDD baru yang hanya berisi elemen yang memenuhi kondisi tersebut.
+
+- cache: metode untuk menyimpan RDD di dalam memori cache agar dapat diakses lebih cepat selama proses komputasi.
+
+- count: fungsi untuk menghitung jumlah elemen dalam RDD dan mengembalikan hasilnya sebagai bilangan bulat, berguna untuk analisis data dasar.
+
 ## SystemCommandsOutput
 
 ![7(1)](https://user-images.githubusercontent.com/90266254/227845150-f2f9b23f-c292-4286-8e61-7a29f45ba00d.png)
