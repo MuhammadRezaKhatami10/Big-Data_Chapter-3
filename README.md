@@ -20,11 +20,11 @@ BIG DATA - Chapter 3
 
 ## SystemCommandsOutput
 
-
+![7(1)](https://user-images.githubusercontent.com/90266254/227845150-f2f9b23f-c292-4286-8e61-7a29f45ba00d.png)
 
 ## SystemCommandsReturnCode
 
-
+![8](https://user-images.githubusercontent.com/90266254/227845209-4af17b33-734b-4841-9921-a7b9b2d0ce68.png)
 
 ## UnderstandingRDDs
 
