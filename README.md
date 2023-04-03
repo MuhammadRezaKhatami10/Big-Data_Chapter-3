@@ -18,8 +18,7 @@ BIG DATA - Chapter 3
 
 - Lambda adalah sebuah fungsi anonim yang sering digunakan dalam pemrograman fungsional dan pemrograman paralel. Fungsi ini biasanya digunakan untuk melakukan operasi yang sederhana dan terbatas pada sebuah data, sehingga sangat cocok untuk dijalankan di dalam RDD.
 
-- Value adalah tipe data dasar dalam Spark yang mewakili nilai tunggal. Tipe data ini dapat berupa tipe data apapun seperti integer, float, string, boolean, atau objek Python. Value sering digunakan sebagai argument dalam method yang membutuhkan input data seperti map atau reduceByKey.
-
+- Value adalah 
 ## Broadcast
 
 ![2](https://user-images.githubusercontent.com/90266254/227842394-11c94df8-1cb3-4898-9bd1-e48824722f2a.png)
