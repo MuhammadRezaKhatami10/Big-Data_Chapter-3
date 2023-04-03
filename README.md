@@ -34,43 +34,48 @@ BIG DATA - Chapter 3
 
 ![pairRDD](https://user-images.githubusercontent.com/90266254/227842484-004bcf52-09e3-4c3c-9126-f393610c1d28.png)
 
-- textFile: fungsi untuk membaca file teks dan mengembalikan RDD dengan setiap baris dalam file menjadi elemen.
+- map: map adalah sebuah fungsi dalam Spark yang digunakan untuk melakukan transformasi pada setiap elemen dalam RDD dengan menggunakan sebuah fungsi yang diberikan sebagai argumen. Fungsi ini mengembalikan RDD baru yang berisi hasil transformasi tersebut.
 
-- filter: fungsi untuk memfilter elemen dalam RDD berdasarkan kondisi tertentu, menghasilkan RDD baru yang hanya berisi elemen yang memenuhi kondisi tersebut.
+- collect: collect adalah sebuah fungsi dalam Spark yang digunakan untuk mengambil semua elemen dalam sebuah RDD dan mengembalikan hasilnya sebagai list pada driver program. Fungsi ini tidak disarankan digunakan pada RDD yang sangat besar, karena dapat mengakibatkan out-of-memory error.
 
-- cache: metode untuk menyimpan RDD di dalam memori cache agar dapat diakses lebih cepat selama proses komputasi.
+- len: len adalah sebuah fungsi dalam bahasa pemrograman Python yang digunakan untuk menghitung jumlah elemen dalam sebuah list atau tipe data lain yang dapat dihitung panjangnya.
 
-- count: fungsi untuk menghitung jumlah elemen dalam RDD dan mengembalikan hasilnya sebagai bilangan bulat, berguna untuk analisis data dasar.
+- keys: keys adalah sebuah metode pada tipe data dictionary dalam bahasa pemrograman Python yang mengembalikan sebuah list yang berisi semua kunci (keys) dalam dictionary tersebut.
+
+- values: values adalah sebuah metode pada tipe data dictionary dalam bahasa pemrograman Python yang mengembalikan sebuah list yang berisi semua nilai (values) dalam dictionary tersebut.
 
 ## SystemCommandsOutput
 
 ![7(1)](https://user-images.githubusercontent.com/90266254/227845150-f2f9b23f-c292-4286-8e61-7a29f45ba00d.png)
 
-- map : metode untuk melakukan transformasi pada setiap elemen RDD dengan mengaplikasikan suatu fungsi pada setiap elemennya.
-
-- collect : metode untuk mengumpulkan semua elemen RDD dan mengembalikannya dalam bentuk array atau list di driver program.
-
-- len : metode untuk mengembalikan jumlah elemen dalam RDD.
-
-- keys : metode untuk mengembalikan RDD baru yang berisi kunci (key) dari setiap pasangan kunci-nilai (key-value) dalam RDD awal.
-
-- values : metode untuk mengembalikan RDD baru yang berisi nilai (value) dari setiap pasangan kunci-nilai dalam RDD awal.
-
 ## SystemCommandsReturnCode
 
 ![8](https://user-images.githubusercontent.com/90266254/227845209-4af17b33-734b-4841-9921-a7b9b2d0ce68.png)
-
 
 ## UnderstandingRDDs
 
 ![RDDs(5)](https://user-images.githubusercontent.com/90266254/227842627-1818c5f5-f81e-49f0-82c9-caf87277f704.png)
 
-Membuat sebuah list, dengan mempraktikan yaitu menghitung jumlah partisi, elemen, menampilkan data pada collection, dan memodifikasi collection (menambahkan atau mengurangi).
+- defaultParallelism: defaultParallelism adalah sebuah atribut dalam Spark yang menentukan jumlah partisi yang digunakan secara default saat membuat RDD baru. Nilai defaultnya adalah jumlah core yang tersedia di cluster.
+
+- getNumPartitions: getNumPartitions adalah sebuah metode dalam Spark yang digunakan untuk mengambil jumlah partisi dalam sebuah RDD.
+
+- mapPartitionsWithIndex: mapPartitionsWithIndex adalah sebuah fungsi dalam Spark yang mirip dengan fungsi map, namun berbeda dalam cara penggunaannya. Fungsi ini memungkinkan pengguna untuk mengakses indeks partisi RDD saat melakukan transformasi pada setiap partisinya.
+
+- repartition: repartition adalah sebuah fungsi dalam Spark yang digunakan untuk mengubah jumlah partisi sebuah RDD menjadi jumlah yang diinginkan. Fungsi ini dapat menyebabkan pengiriman data melintasi jaringan dan dapat memakan waktu yang lama.
+
+- coalesce: coalesce adalah sebuah fungsi dalam Spark yang digunakan untuk menggabungkan beberapa partisi dalam sebuah RDD menjadi satu partisi. Fungsi ini lebih efisien daripada repartition, karena tidak menyebabkan pengiriman data melintasi jaringan.
+
+- toDebugString: toDebugString adalah sebuah metode dalam Spark yang digunakan untuk mengambil string representasi dari RDD yang berisi informasi tentang partisi-partisi dalam RDD, lokasi masing-masing partisi, dan transformasi yang telah dilakukan pada RDD tersebut.
 
 ## WordCount
 
 ![6](https://user-images.githubusercontent.com/90266254/227842680-1a3d104a-ac67-4b3c-95e6-2b79147a4b6a.png)
 
-WordCount digunakan untuk menghitung frekuensi kemunculan kata dalam sebuah teks atau dokumen.
+- flatMap: flatMap adalah sebuah fungsi dalam Spark yang mirip dengan fungsi map, namun berbeda dalam cara penggunaannya. Fungsi ini digunakan untuk menghasilkan nol atau lebih elemen dari setiap elemen dalam RDD yang diberikan sebagai argumen. Fungsi ini mengembalikan RDD baru yang berisi semua elemen yang dihasilkan.
+
+- reduceByKey: reduceByKey adalah sebuah fungsi dalam Spark yang digunakan untuk menghitung agregasi nilai pada tiap kunci (key) dalam sebuah RDD. Fungsi ini mengelompokkan elemen berdasarkan kunci yang sama, dan menggabungkan nilai-nilai untuk setiap kunci menggunakan sebuah fungsi agregasi tertentu. Hasilnya adalah RDD baru yang berisi setiap kunci dengan nilai agregasi yang sesuai.
+
+- split: split adalah sebuah fungsi dalam bahasa pemrograman Python yang digunakan untuk membagi sebuah string menjadi beberapa substring berdasarkan sebuah karakter pemisah (separator). Fungsi ini mengembalikan sebuah list dari substring-substring tersebut.
 
 
