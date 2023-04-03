@@ -18,7 +18,8 @@ BIG DATA - Chapter 3
 
 - Lambda adalah sebuah fungsi anonim yang sering digunakan dalam pemrograman fungsional dan pemrograman paralel. Fungsi ini biasanya digunakan untuk melakukan operasi yang sederhana dan terbatas pada sebuah data, sehingga sangat cocok untuk dijalankan di dalam RDD.
 
-- Value adalah 
+- Value adalah nilai dari suatu variabel bisa berupa Integer, String, DLL
+
 ## Broadcast
 
 ![2](https://user-images.githubusercontent.com/90266254/227842394-11c94df8-1cb3-4898-9bd1-e48824722f2a.png)
@@ -45,13 +46,20 @@ BIG DATA - Chapter 3
 
 ![7(1)](https://user-images.githubusercontent.com/90266254/227845150-f2f9b23f-c292-4286-8e61-7a29f45ba00d.png)
 
-Menampilkan list file pada hdfs. Output 0 atau string "" karna belum terdapat file.
+- map : metode untuk melakukan transformasi pada setiap elemen RDD dengan mengaplikasikan suatu fungsi pada setiap elemennya.
+
+- collect : metode untuk mengumpulkan semua elemen RDD dan mengembalikannya dalam bentuk array atau list di driver program.
+
+- len : metode untuk mengembalikan jumlah elemen dalam RDD.
+
+- keys : metode untuk mengembalikan RDD baru yang berisi kunci (key) dari setiap pasangan kunci-nilai (key-value) dalam RDD awal.
+
+- values : metode untuk mengembalikan RDD baru yang berisi nilai (value) dari setiap pasangan kunci-nilai dalam RDD awal.
 
 ## SystemCommandsReturnCode
 
 ![8](https://user-images.githubusercontent.com/90266254/227845209-4af17b33-734b-4841-9921-a7b9b2d0ce68.png)
 
-Menampilkan list file pada folder /tmp (temporary file)
 
 ## UnderstandingRDDs
 
