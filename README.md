@@ -45,16 +45,24 @@ BIG DATA - Chapter 3
 
 ![7(1)](https://user-images.githubusercontent.com/90266254/227845150-f2f9b23f-c292-4286-8e61-7a29f45ba00d.png)
 
+Menampilkan list file pada hdfs. Output 0 atau string "" karna belum terdapat file.
+
 ## SystemCommandsReturnCode
 
 ![8](https://user-images.githubusercontent.com/90266254/227845209-4af17b33-734b-4841-9921-a7b9b2d0ce68.png)
+
+Menampilkan list file pada folder /tmp (temporary file)
 
 ## UnderstandingRDDs
 
 ![RDDs(5)](https://user-images.githubusercontent.com/90266254/227842627-1818c5f5-f81e-49f0-82c9-caf87277f704.png)
 
+Membuat sebuah list, dengan mempraktikan yaitu menghitung jumlah partisi, elemen, menampilkan data pada collection, dan memodifikasi collection (menambahkan atau mengurangi).
+
 ## WordCount
 
 ![6](https://user-images.githubusercontent.com/90266254/227842680-1a3d104a-ac67-4b3c-95e6-2b79147a4b6a.png)
+
+WordCount digunakan untuk menghitung frekuensi kemunculan kata dalam sebuah teks atau dokumen.
 
 
